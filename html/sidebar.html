@@ -1,0 +1,57 @@
+<div id="sidebar">
+
+    <div class="control-slider">
+        <h1 class="sidebar-title">Controls </h1>
+        <img src="assets/images/general/logoSaturn.png" alt="Saturn" class="logo-title">
+    </div>
+
+    <div class="control-group">
+        <p class="control-text">Sun "exposure"</p>
+        <div class="control-slider">
+            <input id="idSliderExposure" type="range" min="0.5" max="1.5" value="1" step="0.1" class="slider" />
+            <div id="idBoxExposure" class="number-box"></div>
+        </div>
+    </div>
+    <div class="control-group">
+        <p class="control-text">Orbit speed</p>
+        <div class="control-slider">
+            <input id="idSliderOrbitSpeed" type="range" min="0.0" max="3" value="1" step="0.1" class="slider" />
+            <div id="idBoxOrbitSpeed" class="number-box"></div>
+        </div>
+    </div>
+    <div class="control-group">
+        <p class="control-text">Ambient light</p>
+        <div class="control-slider">
+            <input id="idSliderAmbient" type="range" min="0" max="4" value="0.8" step="0.2" class="slider" />
+            <div id="idBoxAmbient" class="number-box"></div>
+        </div>
+    </div>
+    <div class="control-group">
+        <p class="control-text">Framerate</p>
+        <div class="control-slider">
+            <input id="idSliderFramerate" type="range" min="5" max="50" value="35" class="slider" />
+            <div id="idBoxFramerate" class="number-box"></div>
+        </div>
+    </div>
+
+    <div class="checkbox-container">
+        <input type="checkbox" id="idCheckboxOrbit" />
+        <label for="checkbox1">Show orbit</label>
+    </div>
+    <div class="checkbox-container">
+        <input type="checkbox" id="idCheckboxSkybox" />
+        <label for="checkbox3">Star skybox</label>
+    </div>
+
+    <div class="checkbox-container">
+        <input type="checkbox" id="idCheckboxSize" />
+        <label for="checkbox3">Size corrected</label>
+    </div>
+
+    <button id="idPause" class="sidebar-btn sidebar-btn-margins">Pause</button>
+    <button data-dialog-file="dialogInfo.html"
+        class="dialog-toggle sidebar-btn sidebar-btn-margins">Information</button>
+    <button data-dialog-file="dialogAbout.html" class="dialog-toggle sidebar-btn sidebar-btn-margins">About</button>
+    <p style="margin-top: 20px;">camera: <br /> arrow keys + mouse</p>
+
+</div>

@@ -1,0 +1,158 @@
+{ "planets": [
+  {
+    "name": "Mercury",
+    "size": 20,
+    "sizeCorrection": 0.33,
+    "position": { "X": 200, "Y": 0, "Z": 0 },
+    "angle": { "X": 0, "Y": 0, "Z": 0 },
+    "rotation": { "X": 0, "Y": -2, "Z": 0 },
+    "textures": {
+      "bump": "../assets/images/planets/mercuryGroup/mercury/mercurymap.jpg",
+      "map": "../assets/images/planets/mercuryGroup/mercury/mercurymap.jpg"
+    }
+  },
+  {
+    "name": "Venus",
+    "size": 20,
+    "sizeCorrection": 0.95,
+    "position": { "X": 300, "Y": 0, "Z": -2.64 },
+    "angle": { "X": 0, "Y": 0, "Z": 0 },
+    "rotation": { "X": 0, "Y": 1.5, "Z": 0 },
+    "textures": {
+      "bump": "../assets/images/planets/venusGroup/venus/venusbump.jpg",
+      "map": "../assets/images/planets/venusGroup/venus/venusmap.jpg"
+    }
+  },
+  {
+    "name": "Earth",
+    "size": 20,
+    "sizeCorrection": 1,
+    "position": { "X": 400, "Y": 0, "Z": 0 },
+    "angle": { "X": 0, "Y": 0, "Z": -23.5 },
+    "rotation": { "X": 0, "Y": -3, "Z": 0 },
+    "textures": {
+      "bump": "../assets/images/planets/earthGroup/earth/earthbump.jpg",
+      "map": "../assets/images/planets/earthGroup/earth/earthmap.jpg",
+      "spec": "../assets/images/planets/earthGroup/earth/earthspec.jpg"  
+    }
+  },
+    {
+      "name": "Mars",
+      "size": 20,
+      "sizeCorrection": 0.5,
+      "position": { "X": 500, "Y": 0, "Z": 0 },
+      "angle": { "X": 0, "Y": 0, "Z": -25 },
+      "rotation": { "X": 0, "Y": -3, "Z": 0 },
+      "textures": {
+        "bump": "../assets/images/planets/marsGroup/mars/marsbump.png",
+        "map": "../assets/images/planets/marsGroup/mars/marsmap.jpg"
+      }
+    },
+    {
+      "name": "Jupiter",
+      "size": 20,
+      "sizeCorrection": 11,
+      "position": { "X": 600, "Y": 0, "Z": 0 },
+      "angle": { "X": 0, "Y": 0, "Z": -5 },
+      "rotation": { "X": 0, "Y": -3, "Z": 0 },
+      "textures": {
+        "bump": "",
+        "map": "../assets/images/planets/jupiterGroup/jupiter/jupitermap.jpg"
+      }
+    },
+    {
+      "name": "Saturn",
+      "size": 20,
+      "sizeCorrection": 9,
+      "position": { "X": 700, "Y": 0, "Z": 0 },
+      "angle": { "X": 0, "Y": -50, "Z": 0 },
+      "rotation": { "X": 0, "Y": -3, "Z": 0 },
+      "textures": {
+        "bump": "",
+        "map": "../assets/images/planets/saturnGroup/saturn/saturnmap.jpg"
+      }
+    },
+    {
+      "name": "Uranus",
+      "size": 20,
+      "sizeCorrection": 4,
+      "position": { "X": 800, "Y": 0, "Z": 0 },
+      "angle": { "X": 0, "Y": 0, "Z": -97.77},
+      "rotation": { "X": 0, "Y": 5, "Z": 0 },
+      "textures": {
+        "bump": "",
+        "map": "../assets/images/planets/uranusGroup/uranus/uranusmap.jpg"
+      }
+    },
+    {
+      "name": "Neptune",
+      "size": 20,
+      "sizeCorrection": 3.9,
+      "position": { "X": 900, "Y": 0, "Z": 0 },
+      "angle": { "X": 0, "Y": 0, "Z": 28.32 },
+      "rotation": { "X": 0, "Y": -5, "Z": 0 },
+      "textures": {
+        "bump": "",
+        "map": "../assets/images/planets/neptuneGroup/neptune/neptunemap.jpg"
+      }
+    }
+  ],
+
+"other": [
+{ 
+  "name": "Moon",
+  "textures": {
+    "bump": "../assets/images/planets/earthGroup/moon/moonbump.jpg",
+    "map": "../assets/images/planets/earthGroup/moon/moonmap.jpg",
+    "spec": ""
+   },
+   "size": 10,
+  "sizeCorrection": 0.5,
+  "relPosition": { "X": 0, "Y": 0, "Z": 60 },
+  "rotation": {"X": 0, "Y": -1, "Z": 0},
+  "angle": { "X": 0, "Y": -1.5, "Z": 0 },
+  "relSpeed": 0.5
+},
+{
+  "name": "EarthClouds",
+  "textures": {
+    "map": "../assets/images/planets/earthGroup/clouds/earthclouds.jpg"
+  },
+  "rotation": {"X": 0, "Y": -1, "Z": 0},
+  "angle": { "X": 0, "Y": 0, "Z": -23.5 }
+},
+{
+  "name": "SaturnRing",
+  "size": 30,
+  "textures": {
+    "map": "../assets/images/planets/saturnGroup/ring/saturnring.png"
+  },
+  "rotation": {"X": 0, "Y": 0, "Z": 0},
+  "angle": { "X": 0, "Y": -26.73, "Z":  0}
+}, {
+  "name": "Spacestation",
+  "size": 0.4,
+  "textures": {
+    "model": "../assets/images/planets/earthGroup/ISS/isscombined.3ds"
+  },
+  "relPosition": { "X": 0, "Y": 0, "Z": -35 },
+  "rotation": {"X": 0, "Y": 0.1, "Z": 0},
+  "angle": { "X": 10, "Y": 0, "Z": 10 },
+  "relSpeed": 1.5
+
+},
+{
+  "name": "Sun",
+  "size": 80,
+  "sizeCorrection": 109,
+  "position": { "X": 0, "Y": 0, "Z": 0 }
+},
+{
+  "name": "Skybox",
+  "size": 3000,
+  "textures": {
+    "map": "../assets/images/general/milkywayBackground.jpg"
+  }
+}
+]
+}
