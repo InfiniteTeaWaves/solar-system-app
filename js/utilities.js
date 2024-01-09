@@ -26,10 +26,10 @@ export function createControls(camera, canvas) {
   controls.maxDistance = 800;
   controls.maxPolarAngle = Math.PI / 2;
   controls.keys = {
-    LEFT: "ArrowLeft", //left arrow
-    UP: "ArrowUp", // up arrow
-    RIGHT: "ArrowRight", // right arrow
-    BOTTOM: "ArrowDown", // down arrow
+    LEFT: "ArrowLeft",
+    UP: "ArrowUp",
+    RIGHT: "ArrowRight",
+    BOTTOM: "ArrowDown",
   };
   controls.keyPanSpeed = 50;
   controls.listenToKeyEvents(window);

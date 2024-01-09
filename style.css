@@ -3,9 +3,10 @@ html, body {
   padding-left: 0; 
   padding-right: 0;
   font-family: 'Press Start 2P', cursive;
-  color: rgba(253,150,80,1);
+  color: #fd9650;
   font-size: 13px;
   height: 100%;
+  cursor: url('assets/images/general/cursor.svg') 6 0, auto;
 }
 
 canvas {
@@ -157,6 +158,7 @@ canvas {
   background: rgba(253, 150, 80, 0.2);
   outline: none;
   border-radius: 0; /* Change this from 10px to 0 */
+  cursor: url('assets/images/general/cursor.svg') 6 0, auto;
 }
 
 .slider::-webkit-slider-thumb {
@@ -165,7 +167,7 @@ canvas {
   height: 25px;
   background: rgba(253, 150, 80, 0.5);
   border-radius: 0; /* Change this from 50% to 0 */
-  cursor: pointer;
+  cursor: url('assets/images/general/cursor.svg') 6 0, auto;
   box-shadow: 0 0 5px rgba(253, 150, 80, 0.1);
 }
 
@@ -200,7 +202,7 @@ input[type="checkbox"] {
   width: 25px; 
   height: 25px; 
   position: relative;
-  cursor: pointer;
+  cursor: url('assets/images/general/cursor.svg') 6 0, auto;
   border-radius: 0;
 }
 
@@ -262,7 +264,7 @@ input[type="checkbox"]:active::before {
   color: #082334;
   font-family: 'Press Start 2P', cursive;
   padding: 10px;
-  cursor: pointer;
+  cursor: url('assets/images/general/cursor.svg') 6 0, auto;
   font-size: 1rem;
 }
 
@@ -320,7 +322,7 @@ input[type="checkbox"]:active::before {
 }
 
 .close-dialog {
-  cursor: pointer;
+  cursor: url('assets/images/general/cursor.svg') 6 0, auto;
   background: none;
   border: none;
   font-size: 2rem; /* Adjust this value to change the size of the 'X' */
@@ -351,4 +353,8 @@ input[type="checkbox"]:active::before {
 
 .hyperlink-color{
   color: white;
+}
+
+a {
+  cursor: url('assets/images/general/cursor.svg') 6 0, auto;
 }

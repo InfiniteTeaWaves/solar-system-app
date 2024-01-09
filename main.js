@@ -4,21 +4,18 @@ import * as Utilities from "./js/utilities.js";
 import * as sceneEvents from "./js/sceneEvents.js";
 import * as UiElements from "./js/uiElements.js";
 
-await UiElements.loadUiElements();
-
+let init = true;
+let lastRenderTime = 0;
 const oScene = new SpaceScene();
-await oScene.createScene();
 
-UiElements.hideBusyIndicator();
-sceneEvents.addSceneEventListener(oScene);
-
-var init = true;
-var lastRenderTime = 0;
-var currentTime = 0;
-var animationFrameID;
+Promise.all([UiElements.loadUiElements(), oScene.createScene()]).then(() => {
+  UiElements.hideBusyIndicator();
+  sceneEvents.addSceneEventListener(oScene);
+  animate();
+});
 
 function animate(time) {
-  animationFrameID = requestAnimationFrame(animate);
+  requestAnimationFrame(animate);
 
   if (time == undefined) {
     time = 0;
@@ -30,16 +27,11 @@ function animate(time) {
   }
 
   oScene.updateControls();
-
-  oScene.updateLoop(time);
-
   if (!Utilities.capFPS(lastRenderTime, time, UiElements.getMaxFramerate())) {
     return;
   }
-
-  Utilities.updateFramerate(time);
+  oScene.updateLoop(time);
 
   lastRenderTime = time;
+  Utilities.updateFramerate(time);
 }
-
-animate();
