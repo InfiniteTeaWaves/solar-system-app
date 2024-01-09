@@ -3,7 +3,7 @@ import * as Utilities from "../utilities.js";
 import SpaceRenderer from "./Renderer.js";
 import SpaceObjectCreator from "./SpaceCreator.js";
 import * as UiElements from "../uiElements.js";
-// import { hideBusyIndicator } from "../uiElements.js";
+import planetsData from "../../data/planetsData.json";
 
 export default class Scene extends THREE.Scene {
   constructor() {
@@ -32,7 +32,7 @@ export default class Scene extends THREE.Scene {
   }
 
   async createScene() {
-    const data = await Utilities.fetchPlanetData();
+    const data = planetsData;
 
     this.planetData = data.planets;
     this.otherData = data.other;

@@ -18,7 +18,7 @@ export function hideBusyIndicator() {
 //footer
 async function loadFooter() {
   try {
-    const response = await fetch("./html/footer.html");
+    const response = await fetch("../html/footer.html");
     if (!response.ok) {
       throw new Error("Network response was not ok");
     }
@@ -32,7 +32,7 @@ async function loadFooter() {
 //Sidebar
 async function loadSidebar() {
   try {
-    const response = await fetch("./html/sidebar.html");
+    const response = await fetch("../html/sidebar.html");
     if (!response.ok) {
       throw new Error("Network response was not ok");
     }
@@ -60,7 +60,7 @@ function addToggleSidebar() {
 //Dialog
 async function loadDialog() {
   try {
-    const response = await fetch("./html/dialog.html");
+    const response = await fetch("../html/dialog.html");
     if (!response.ok) {
       throw new Error("Network response was not ok");
     }
@@ -81,7 +81,7 @@ function addToggleDialog() {
       var file = this.getAttribute("data-dialog-file");
 
       // Fetch the dialog content from the relevant file
-      const response = await fetch(`./html/${file}`);
+      const response = await fetch(`../html/${file}`);
       if (!response.ok) {
         throw new Error("Network response was not ok");
       }

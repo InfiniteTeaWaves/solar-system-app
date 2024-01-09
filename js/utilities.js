@@ -2,12 +2,6 @@ import * as THREE from "https://cdn.skypack.dev/three@0.137";
 import { MapControls } from "https://cdn.skypack.dev/three-stdlib@2.8.5/controls/OrbitControls";
 import * as UiElements from "./uiElements.js";
 
-export async function fetchPlanetData() {
-  const response = await fetch("./data/planetsData.json");
-  const data = await response.json();
-  return data;
-}
-
 export function createCamera() {
   var camera = new THREE.PerspectiveCamera(90, window.innerWidth / window.innerHeight, 1, 5000);
   camera.position.set(-800, 400, 0);
