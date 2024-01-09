@@ -8,10 +8,12 @@ let init = true;
 let lastRenderTime = 0;
 const oScene = new SpaceScene();
 
-Promise.all([UiElements.loadUiElements(), oScene.createScene()]).then(() => {
-  UiElements.hideBusyIndicator();
-  sceneEvents.addSceneEventListener(oScene);
-  animate();
+Promise.all([UiElements.loadUiElements()]).then(() => {
+  Promise.all([oScene.createScene()]).then(() => {
+    UiElements.hideBusyIndicator();
+    sceneEvents.addSceneEventListener(oScene);
+    animate();
+  });
 });
 
 function animate(time) {
