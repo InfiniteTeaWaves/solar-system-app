@@ -1,8 +1,0 @@
-//ToDos
-//2. adjust github links and change repo
-//1. check corrected Sizes
-//2. clean up coding and index.html
-//3. add license
-//4. add ReadMe
-//5. normalize rotation and orbit speeds
-//6. last render frame logic rework
