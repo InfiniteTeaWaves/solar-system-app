@@ -117,6 +117,7 @@ canvas {
   text-align: center;
   margin-top: 30px;
   font-size: 20px;
+  line-height: 150%;
 }
 
 /*logo*/ 
@@ -155,6 +156,7 @@ canvas {
   font-size: 1.25rem;
   margin-bottom: 10px;
   margin-right: 10px;
+  line-height: 150%;
   text-shadow: #082334;
 }
 
@@ -340,6 +342,7 @@ input[type="checkbox"]:active::before {
   z-index: 4; /* Higher than everything else */
   left: 0;
   top: 0;
+  overflow: auto;
   width: 100%; /* Full width */
   height: 100%; /* Full height */
   background-color: rgba(8, 35, 52, 0.7); /* Same as your sidebar */
@@ -350,23 +353,27 @@ input[type="checkbox"]:active::before {
 
 .dialog-content {
   background: rgba(8, 35, 52, 0.9);
-  padding: 20px;
   border-radius: 8px;
   width: 80%;
-  max-width: 1000px;
+  max-width: 780px;
 }
 
- .dialog-container-padding{
+.dialog-content-padding{
+  padding: 20px;
+}
+
+.dialog-container-padding{
   padding: 50px;
- }
+}
 
 @media only screen and (max-width: 768px) {
+  .dialog-content-padding{
+    padding: 10px;
+  }
   .dialog-container-padding{
     padding: 10px;
   }
 }
-
-
 
 .dialog-header {
   display: flex;
@@ -387,9 +394,17 @@ input[type="checkbox"]:active::before {
   margin-bottom: 40px; /* Adjust to your needs */
 }
 
+@media only screen and (max-width: 768px) {
+  .dialog-section{
+    margin-bottom: 10px;
+  }
+}
+
+
 .dialog-subheader {
   color: rgba(253, 150, 80, 1); /* Same as your sidebar */
   font-size: 13px; /* Adjust to your needs */
+  line-height: 150%;
   margin-bottom: 10px; /* Adjust to your needs */
 }
 

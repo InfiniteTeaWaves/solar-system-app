@@ -65,7 +65,7 @@
       "size": 20,
       "sizeCorrection": 9,
       "position": { "X": 700, "Y": 0, "Z": 0 },
-      "angle": { "X": 0, "Y": -50, "Z": 0 },
+      "angle": { "X": 0, "Y": 0, "Z": 26.9 },
       "rotation": { "X": 0, "Y": -3, "Z": 0 },
       "textures": {
         "bump": "",
