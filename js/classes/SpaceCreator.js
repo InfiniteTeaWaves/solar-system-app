@@ -170,10 +170,12 @@ export default class SpaceObjectCreator {
   createPlanetOrbit(radius, name) {
     const innerRadius = radius - 1;
     const outerRadius = radius + 1;
-    const geometry = new THREE.RingGeometry(innerRadius, outerRadius, 64);
+    const geometry = new THREE.RingGeometry(innerRadius, outerRadius, 256);
     const material = new THREE.MeshBasicMaterial({
       color: 0xffffff,
       side: THREE.DoubleSide,
+      transparent: true,
+      opacity: 0.3,
     });
 
     const circle = new THREE.Mesh(geometry, material);

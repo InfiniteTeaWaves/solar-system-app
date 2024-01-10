@@ -4,7 +4,9 @@ html, body {
   padding-right: 0;
   font-family: 'Press Start 2P', cursive;
   color: #fd9650;
-  font-size: 13px;
+  font-size: 11px;
+  line-height: 100%;
+  word-spacing: -2px;
   height: 100%;
   cursor: url('/assets/cursor.svg') 6 0, auto;
 }
@@ -34,6 +36,16 @@ canvas {
   justify-content: center;
   align-items: center;
   padding: 5px;
+}
+
+.footer-visible{
+  display: show;
+}
+
+@media only screen and (max-width: 767px) {
+  .footer-visible {
+      display: none;
+  }
 }
 
 /*busy indicator*/
@@ -109,39 +121,48 @@ canvas {
 
 /*logo*/ 
 .logo-footer {
-  max-height: 30px; 
+  max-height: 25px; 
   /* margin-bottom: 5px; */
 }
 
 .logo-title {
-  max-height: 50px; 
-  margin-bottom: 10px;
+  max-height: 40px; 
+  margin-bottom: 2px;
 }
 
 /*side bar */
 #sidebar {
   position: fixed;
-  bottom: 120px;
   right: 10px;
   width: 250px;
   background-color: rgba(8, 35, 52, 0.7);
-  padding: 20px;
   z-index: 3;
+}
+
+.sidebar-device{
+  bottom: 95px;
+  padding: 20px;
+}
+
+@media only screen and (max-width: 768px) {
+  .sidebar-device{
+    bottom: 30px;
+    padding: 10px;
+  }
 }
 
 .sidebar-title {
   font-size: 1.25rem;
-  margin-bottom: 30px;
+  margin-bottom: 10px;
   margin-right: 10px;
   text-shadow: #082334;
 }
 
 .control-group {
-  margin-bottom: 25px;
+  margin-bottom: 15px;
 }
 
 .control-text {
-  /* font-size: 16px; */
   margin-bottom: 5px;
 }
 
@@ -154,7 +175,7 @@ canvas {
 .slider {
   -webkit-appearance: none;
   width: 100%;
-  height: 15px;
+  height: 13px;
   background: rgba(253, 150, 80, 0.2);
   outline: none;
   border-radius: 0; /* Change this from 10px to 0 */
@@ -185,13 +206,19 @@ canvas {
   box-shadow: 0 0 5px rgba(253, 150, 80, 0.3);
 }
 
-
-
 /*Side bar Checkbox */
 .checkbox-container {
   display: flex;
   align-items: center;
-  margin-bottom: 5px;
+  margin-bottom: 3px;
+}
+
+@media only screen and (max-width: 768px) {
+  .checkbox-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0px;
+  }
 }
 
 input[type="checkbox"] {
@@ -250,8 +277,8 @@ input[type="checkbox"]:active::before {
   height: 25px; 
   font-size: 1rem; 
   text-align: center; 
+  line-height: 25px;
   color: rgba(253,150,80,1);
-  line-height: 25px; 
   margin-left: 10px; 
   position: relative; 
   background: rgba(253,150,80,0.3);
@@ -263,7 +290,7 @@ input[type="checkbox"]:active::before {
   border: none;
   color: #082334;
   font-family: 'Press Start 2P', cursive;
-  padding: 10px;
+  padding: 8px;
   cursor: url('/assets/cursor.svg') 6 0, auto;
   font-size: 1rem;
 }
@@ -272,6 +299,14 @@ input[type="checkbox"]:active::before {
   margin-top: 10px; 
   margin-left: 40px; 
   width: 13rem;
+}
+
+@media only screen and (max-width: 768px) {
+  .sidebar-btn-margins {
+    margin-top: 7px; 
+    margin-left: 40px; 
+    width: 13rem;
+  }
 }
 
 .sidebar-btn:hover {
@@ -284,12 +319,19 @@ input[type="checkbox"]:active::before {
 
 .sidebar-toggle-btn {
   position: fixed;
-  bottom: 100px;
+  bottom: 80px;
   right: 20px;
   z-index: 4;
 }
 
-
+@media only screen and (max-width: 768px) {
+  .sidebar-toggle-btn {
+    position: fixed;
+    bottom: 15px;
+    right: 15px;
+    z-index: 4;
+  }
+}
 
 /* Dialog*/
 .dialog-container {
@@ -301,7 +343,6 @@ input[type="checkbox"]:active::before {
   width: 100%; /* Full width */
   height: 100%; /* Full height */
   background-color: rgba(8, 35, 52, 0.7); /* Same as your sidebar */
-  padding: 50px;
   justify-content: center;
   align-items: center;
   color: rgba(253, 150, 80, 1); /* Same as your sidebar */
@@ -314,6 +355,18 @@ input[type="checkbox"]:active::before {
   width: 80%;
   max-width: 1000px;
 }
+
+ .dialog-container-padding{
+  padding: 50px;
+ }
+
+@media only screen and (max-width: 768px) {
+  .dialog-container-padding{
+    padding: 10px;
+  }
+}
+
+
 
 .dialog-header {
   display: flex;
@@ -336,19 +389,17 @@ input[type="checkbox"]:active::before {
 
 .dialog-subheader {
   color: rgba(253, 150, 80, 1); /* Same as your sidebar */
-  font-size: 16px; /* Adjust to your needs */
+  font-size: 13px; /* Adjust to your needs */
   margin-bottom: 10px; /* Adjust to your needs */
 }
 
 .dialog-text {
   color: rgba(253, 150, 80, 1); /* Same as your sidebar */
-  font-size: 16px; /* Adjust to your needs */
 }
 
 .dialog-cont-text{
   color: rgba(253, 150, 80, 1); /* Same as your sidebar */
-  font-size: 16px; /* Adjust to your needs */
-  line-height: 130%;
+  line-height: 160%;
 }
 
 .hyperlink-color{
@@ -357,4 +408,10 @@ input[type="checkbox"]:active::before {
 
 a {
   cursor: url('/assets/cursor.svg') 6 0, auto;
+}
+
+.camera-text{
+  margin-top: 12.5px;
+  margin-bottom: 5px;
+  line-height: 150% !important;
 }
