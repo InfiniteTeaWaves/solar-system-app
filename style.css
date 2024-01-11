@@ -141,7 +141,7 @@ canvas {
 }
 
 .sidebar-device{
-  bottom: 95px;
+  bottom: 90px;
   padding: 20px;
 }
 
@@ -286,13 +286,28 @@ input[type="checkbox"]:active::before {
   background: rgba(253,150,80,0.3);
 }
 
+/* Sidebar Menu Button*/
+.sidebar-menu-btn {
+  display: flex; 
+  align-items: center;  
+  justify-content: center; 
+}
+
+.sidebar-menu-btn-text{
+  font-size: 14px;
+  margin-top: 5px;
+  margin-right: 10px;
+  margin-left: 5px;
+  color: #ffffff;
+}
+
 /* Sidebar buttons */
 .sidebar-btn {
   background: rgba(253, 150, 80, 0.5);
   border: none;
   color: #082334;
   font-family: 'Press Start 2P', cursive;
-  padding: 8px;
+  padding: 7px;
   cursor: url('/assets/cursor.svg') 6 0, auto;
   font-size: 1rem;
 }
@@ -321,16 +336,16 @@ input[type="checkbox"]:active::before {
 
 .sidebar-toggle-btn {
   position: fixed;
-  bottom: 80px;
-  right: 20px;
+  bottom: 68px;
+  right: 15px;
   z-index: 4;
 }
 
 @media only screen and (max-width: 768px) {
   .sidebar-toggle-btn {
     position: fixed;
-    bottom: 15px;
-    right: 15px;
+    bottom: 10px;
+    right: 10px;
     z-index: 4;
   }
 }

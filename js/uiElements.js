@@ -48,11 +48,14 @@ async function loadSidebar() {
 //toggle sidebar
 function addToggleSidebar() {
   document.getElementById("sidebar-toggle").addEventListener("click", function () {
-    var sidebar = document.getElementById("sidebar");
+    const sidebar = document.getElementById("sidebar");
+    const sidebarImg = document.getElementById("idToggleButtonImage");
     if (sidebar.style.display === "none") {
       sidebar.style.display = "block";
+      sidebarImg.src = "assets/menuClose.svg";
     } else {
       sidebar.style.display = "none";
+      sidebarImg.src = "assets/menuOpen.svg";
     }
   });
 }
