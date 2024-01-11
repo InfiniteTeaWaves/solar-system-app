@@ -1,3 +1,6 @@
+import menuClose from "../assets/menuClose.svg";
+import menuOpen from "../assets/menuOpen.svg";
+
 var maxFramerate = 60; // default value
 var isPaused = false;
 var orbitSpeed = 1;
@@ -52,10 +55,10 @@ function addToggleSidebar() {
     const sidebarImg = document.getElementById("idToggleButtonImage");
     if (sidebar.style.display === "none") {
       sidebar.style.display = "block";
-      sidebarImg.src = "assets/menuClose.svg";
+      sidebarImg.src = menuClose;
     } else {
       sidebar.style.display = "none";
-      sidebarImg.src = "assets/menuOpen.svg";
+      sidebarImg.src = menuOpen;
     }
   });
 }
